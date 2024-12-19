@@ -1,0 +1,35 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+url = "https://download.pytorch.org/whl/cu118"
+verify_ssl = true
+name = "pytorch-cu118"
+
+[packages]
+httpx = {extras = ["http2"], version = "~=0.27.2"}
+cryptography = "~=43.0.0"
+onnxruntime = "~=1.19.0"
+opencv-python = "~=4.10.0.84"
+numpy = "~=2.1.0"
+pillow = "*"
+
+[dev-packages]
+ipykernel = "*"
+
+[train-cuda]
+torch = {version="==2.5.1+cu118", index="pytorch-cu118"}
+torchvision = {version="==0.20.1+cu118", index="pytorch-cu118"}
+torchaudio = {version="==2.5.1+cu118", index="pytorch-cu118"}
+onnx = "*"
+
+[train-cpu]
+torch = {version="==2.5.1"}
+torchvision = {version="==0.20.1"}
+torchaudio = {version="==2.5.1"}
+onnx = "*"
+
+[requires]
+python_version = "3.12"
