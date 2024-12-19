@@ -446,7 +446,7 @@ Bm1Zzu+l8nSOqAurgQIDAQAB
         data = json.loads(resp[22:-1])["data"]
         self.pic_path = data["pic"]
         pic_url = "https://" + data["image_servers"][0][:-1] + data["pic"]
-        return self.session.get(pic_url).content
+        return self.session.get(pic_url).content, data
 
     def verify(self, points: list):
         u = self.enc_key
