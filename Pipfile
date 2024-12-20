@@ -14,7 +14,8 @@ cryptography = "~=43.0.0"
 onnxruntime = "~=1.19.0"
 opencv-python = "~=4.10.0.84"
 numpy = "~=2.1.0"
-pillow = "*"
+pillow = "~=11.0.0"
+huggingface_hub = "~=0.27.0"
 
 [dev-packages]
 ipykernel = "*"
@@ -29,7 +30,7 @@ onnx = "*"
 torch = {version="==2.5.1"}
 torchvision = {version="==0.20.1"}
 torchaudio = {version="==2.5.1"}
-onnx = "*"
+onnx = "==1.17.0"
 
 [requires]
 python_version = "3.12"
