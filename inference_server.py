@@ -4,7 +4,7 @@ from flask import Flask, Response, request
 import numpy as np
 
 from hf import download_model, download_dataset
-from interence import MyModelONNX
+from inference import MyModelONNX
 from crack import Crack
 from data_collector import HINTS_DIR, GUESS_CATEGORY_THRESHOLD
 from image_processor import crop_v3_nine_image

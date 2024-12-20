@@ -3,7 +3,7 @@ import time
 
 from data_collector import new_crack, fetch_challenge_data, DataSetManager
 from data_collector import GUESS_CATEGORY_THRESHOLD, FREEZE_CATEGORY_NUM, SHOW_GEETEST_RESULT
-from interence import MyModelONNX
+from inference import MyModelONNX
 import image_processor
 
 MODEL_PATH = './model/model_e10.onnx'
