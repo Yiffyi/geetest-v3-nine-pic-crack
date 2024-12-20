@@ -186,7 +186,7 @@ def collect_once(ds: DataSetManager) -> bool:
 
     if SHOW_GEETEST_RESULT:
         submission = []
-        for v, idx in enumerate(sel):
+        for idx, v in enumerate(sel):
             if v:
                 col = idx % 3
                 row = idx // 3

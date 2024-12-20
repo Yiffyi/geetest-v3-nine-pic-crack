@@ -125,6 +125,7 @@ def convert(model_path: str, output_path: str):
 
 if __name__ == "__main__":
     # pass
-    train(10)
+    os.makedirs(MODEL_DIR, exist_ok=True)
+    # train(10)
     # inference(f"{MODEL_DIR}/model.pth", UNKNOWN_DIR)
-    # convert(f"{MODEL_DIR}/model_e10.pth", f"{MODEL_DIR}/model_e10.onnx")
+    convert(f"{MODEL_DIR}/model.pth", f"{MODEL_DIR}/model.onnx")
