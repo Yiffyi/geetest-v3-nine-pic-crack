@@ -28,4 +28,4 @@ jobs:
       shell: bash
       env:
         CF_TUNNEL_TOKEN: ${{ secrets.CF_TUNNEL_TOKEN }}
-      run: sudo cloudflared service install $CF_TUNNEL_TOKEN & python inference_server.py
+      run: cloudflared tunnel --loglevel debug run --token $CF_TUNNEL_TOKEN & pipenv run python inference_server.py
