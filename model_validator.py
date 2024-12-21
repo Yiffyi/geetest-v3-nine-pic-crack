@@ -7,10 +7,14 @@ from inference import MyModelONNX
 import image_processor
 
 MODEL_PATH = './model/model_e10.onnx'
+# 关闭人工介入
+# 设为 False 则在提交答案前可以人工修改模型推理的结果
 AUTO_COLLECT = True
 AUTO_COLLECT_STOP_AT_VALID_COUNT = 100
 
 ENSURE_DURATION = 4.0
+
+# 设为 True，则会将通过验证的数据保存到数据集中，以便再次训练
 UPDATE_DATASET = False
 
 

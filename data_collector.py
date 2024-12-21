@@ -16,8 +16,14 @@ RAW_DIR = './dataset/raw'
 UNKNOWN_DIR = './dataset/unknown'
 RAW_IMAGE_METADATA_PATH = './dataset/raw_images.json'
 
+# 用于匹配 challenge 小图类别的阈值，如果标准差小于这个值，则判定小图的类别为已有的某个类别。
+# 实际如果匹配上是小于 1 的，不匹配大概在 50 左右。
 GUESS_CATEGORY_THRESHOLD = 10
+
+# 指定一共有 90 个类别。如果出现新类别或者数据集种类不够，自动报错推出。
 FREEZE_CATEGORY_NUM = 90
+
+# 是否提交极验服务验证结果
 SHOW_GEETEST_RESULT = True
 
 class DataSetManager:
