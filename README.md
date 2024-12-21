@@ -2,6 +2,9 @@
 自动完成极验三代九宫格验证码（米游社同款）
 模型和数据集可以在 Hugging Face 下载。
 
+请遵守我和项目 ravizhan/geetest-v3-click-crack 作者的 AGPL 许可证
+省流：在本项目及其修改版本基础上搭建的（公开） API 服务，也需要（向使用者）开放源代码
+
 https://huggingface.co/Yiffyi/resnet-geetest-v3-nine-pic
 https://huggingface.co/datasets/Yiffyi/dataset-geetest-v3-nine-pic
 
