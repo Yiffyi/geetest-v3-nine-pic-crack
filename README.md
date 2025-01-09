@@ -74,7 +74,7 @@ SHOW_GEETEST_RESULT = True
 
 ## 训练
 
-在 `train.py` 文件，底部选择 `train` `convert` 等不同的人物。训练模型选择 `train` 并指定 `epoch`。
+在 `train.py` 文件，底部选择 `train` `convert` 等不同的任务。训练模型选择 `train` 并指定 `epoch`。
 
 ## 验证模型
 
